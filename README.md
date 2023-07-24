@@ -24,12 +24,6 @@ SET GLOBAL validate_password.policy=LOW;
 
 CREATE USER 'test'@'localhost' IDENTIFIED BY 'rootroot';
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'rootroot_1T';
-	
-SET GLOBAL validate_password.policy=MEDIUM;
-
-SET GLOBAL validate_password.policy=LOW;
-
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'rootroot';
 
 SET GLOBAL validate_password.policy=MEDIUM;
